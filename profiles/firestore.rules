@@ -1,0 +1,12 @@
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /paymentStatus/{document=**} {
+      allow read, write: if true
+    }
+
+    match /paymentInfo/{document=**} {
+      allow read: if false
+      allow write: if true
+    }
+  }
+}
