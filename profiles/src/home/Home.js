@@ -123,7 +123,7 @@ export default class Home extends Component {
                     className="text-center mt-50">
                       
             <div  className=" w3-lobster font-50 mt-100">
-            Dr. Scott Stevenson <br/>Veterinary Services<br/>
+            Dr. Scott Stsdsdssevenson <br/>Veterinary Services<br/>
             In your home or on the phone<br/>
         </div>
 
