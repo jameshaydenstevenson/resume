@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import '../styles/GlobalStyle.css'
 import { Helmet } from "react-helmet"
-import { Layout, BackTop, Row, Col } from 'antd'
+import { Layout, BackTop} from 'antd'
 var CSSTransitionGroup = require('react-transition-group/CSSTransitionGroup')
 const Content = Layout.Content
 
@@ -91,533 +91,123 @@ export default class Home extends Component {
       <Layout className="content ">
             <Layout>
               <Content className="">
-          <div className={""}>
-
-    <div className="absolute-tl w-100 pt-4 "
-    style={{marginLeft:'1%'}}>
-    <img alt="img" src="/pawcall_icon.png" height={120} />
-    <span className="font-paw-dark-blue mt-4 w3-lobster font-50"
-    style={{marginLeft:'1%'}}
-    >Paw Call</span>
-    </div>
-   
-
-    <div id="catphone" className="">
-    <Row gutter={32}>
-    <Col 
-                    xs={{ span: 24, offset: 0 }} 
-                    sm={{ span: 24, offset: 0 }} 
-                    md={{ span: 24, offset: 0 }} 
-                    lg={{ span: 24, offset: 0 }} 
-                    xl={{ span: 3, offset: 0 }} 
-                    className="text-center ">
                 
 
-                  </Col>
-                  <Col 
-                    xs={{ span: 24, offset: 0 }} 
-                    sm={{ span: 24, offset: 0 }} 
-                    md={{ span: 24, offset: 0 }} 
-                    lg={{ span: 24, offset: 0 }} 
-                    xl={{ span: 11, offset: 0 }} 
-                    className="text-center mt-50">
-                      
-            <div  className=" w3-lobster font-50 mt-100">
-            Dr. Scott Stsdsdssevenson <br/>Veterinary Services<br/>
-            In your home or on the phone<br/>
-        </div>
-
-                  </Col>
-                  <Col 
-                    xs={{ span: 24, offset: 0 }} 
-                    sm={{ span: 24, offset: 0 }} 
-                    md={{ span: 24, offset: 0 }} 
-                    lg={{ span: 24, offset: 0 }} 
-                    xl={{ span: 10, offset: 0 }} 
-                    className="text-center">
-                    
-
-                  </Col>
-                  </Row>
-        
+{/* 
+              <div id="loading">
+        <div id="spinner"></div>
+    </div> */}
+    <div id="magnify">
+        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+        <div id="img_here"></div>
     </div>
-
-
-
-
-
-
-    <div id="portfolio" className="background-paw-dark-blue">
-    <div className="background-paw-dark-blue pt-100 ">
-                <Row gutter={32}>
-                  <Col 
-                    xs={{ span: 24, offset: 0 }} 
-                    sm={{ span: 24, offset: 0 }} 
-                    md={{ span: 24, offset: 0 }} 
-                    lg={{ span: 24, offset: 0 }} 
-                    xl={{ span: 8, offset: 0 }} 
-                    className="text-center">
-                      
-                      <img alt="img" src="/scott.jpg" height={300} />
-
-                  </Col>
-                  <Col 
-                    xs={{ span: 24, offset: 0 }} 
-                    sm={{ span: 24, offset: 0 }} 
-                    md={{ span: 24, offset: 0 }} 
-                    lg={{ span: 24, offset: 0 }} 
-                    xl={{ span: 16, offset: 0 }} className="" >
-                 <div className="pawcall-font-title mb-2">about.</div>
-    <div className="text-left font-20 pawcall-font-yellow word-wrap white-space-normal">
-<div> I am Scott Stevenson, a practicing veterinarian residing in
-  Henderson County, North Carolina. I have been in private practice for 34 years
-  and have a special interest in preventative medicine and general health care 
-  for your dogs and cats. I am a great believer in the human-pet bond and feel that
-  home health is the best way to take care of your pet family. 
-</div>
-             </div>
-                  </Col>
-                  </Row>
-             </div>
-
-
-             <div className="pawcall-font-title mt-100 text-center mb-4">paw call perks.</div>  
-
-    <div className="background-paw-dark-blue ">
-                <Row gutter={32}>
-                  <Col 
-                    xs={{ span: 24, offset: 0 }} 
-                    sm={{ span: 24, offset: 0 }} 
-                    md={{ span: 24, offset: 0 }} 
-                    lg={{ span: 24, offset: 0 }} 
-                    xl={{ span: 8, offset: 0 }} className = "text-center mt-2 mb-2">
-                      <img alt="img" src="/pc-clarity.png" height={80} />
-            <div className="pt-2 font-24 pawcall-font-orange">
-            clarity </div>
-            <div className="p-1 text-left font-16 pawcall-font-yellow ">
-            Paw Call provides you a better understanding of your pet's health,
-            of the procedures that your vet may recommend,
-            and of the medical terminology used online and by your veternarian.
-             </div>
-                        
-
-                  </Col>
-                  <Col 
-                    xs={{ span: 24, offset: 0 }} 
-                    sm={{ span: 24, offset: 0 }} 
-                    md={{ span: 24, offset: 0 }} 
-                    lg={{ span: 24, offset: 0 }} 
-                    xl={{ span: 8, offset: 0 }} className = "text-center mt-2 mb-2">
-                      <img alt="img" src="/pc-interaction.png" height={80} />
-                       
-                       <div className="pt-2 font-24 pawcall-font-orange">
-            direct interaction </div>
-            <div className="p-1 text-left font-16 pawcall-font-yellow">
-            Paw Call offers you the ability to talk directly with a licensed,
-            experienced veterinarian that can provide you with simple, detailed explanations
-            that you cannot find online.
-            </div>
-                        
-                  </Col>
-                  <Col s
-                    xs={{ span: 24, offset: 0 }} 
-                    sm={{ span: 24, offset: 0 }} 
-                    md={{ span: 24, offset: 0 }} 
-                    lg={{ span: 24, offset: 0 }} 
-                    xl={{ span: 8, offset: 0 }} className = "text-center mt-2 mb-2">
-                      <img alt="img" src="/pc-cheap.png" height={80} />
-                       <div className="pt-2 font-24 pawcall-font-orange">
-                       inexpensive </div>
-            <div className="p-1 text-left font-16 pawcall-font-yellow">
-            Paw Call provides you the opportunity to assess your pet's
-            treatment options right in your home before paying for office visits.</div>
-                  </Col>
-                 
-                  </Row>
-              </div>
-
-                 <div className="pawcall-font-title mt-4">paw calls: phone consultations.*</div>  
-      <div className="pawcall-font pawcall-font-yellow pt-1 pb-2">
-        Hours of Operation: Monday-Friday 8-5pm
-      </div>
-      <div className="pawcall-font pb-2">
-        Please select a Paw Call service:
-      </div>
-      <div>
-                    
-              <div className="background-paw-dark-blue">
-                <Row gutter={32}>
-                  <Col 
-                    xs={{ span: 24, offset: 0 }} 
-                    sm={{ span: 24, offset: 0 }} 
-                    md={{ span: 24, offset: 0 }} 
-                    lg={{ span: 24, offset: 0 }} 
-                    xl={{ span: 6, offset: 0 }} >
-                      <Link to="/pay" 
-        className="ant-btn ant-btn-lg paw-btn p-0 inline-block w-100 h-100 relative mb-2"
-                      style={{minHeight: '210px'}}
-                      >
-                        <div className="p-2 font-20 word-wrap white-space-normal">
-                          <b>5 minute consultation</b><br/> over the phone</div>
-                        <div className="absolute-bl w-100">
-                          <div className="p-2 border-top">
-                            <div className="font-24">$10</div>
-                          </div>
-                        </div>
-
-                      </Link>
-                  </Col>
-                  <Col 
-                    xs={{ span: 24, offset: 0 }} 
-                    sm={{ span: 24, offset: 0 }} 
-                    md={{ span: 24, offset: 0 }} 
-                    lg={{ span: 24, offset: 0 }} 
-                    xl={{ span: 6, offset: 0 }} >
-                      <Link to="/pay" 
-  className="ant-btn ant-btn-lg paw-btn p-0 inline-block w-100 h-100 relative mb-2"
-                      style={{minHeight: '210px'}}
-                      >
-                        <div className="p-2 font-20 word-wrap white-space-normal">
-                        <b>10 minute consultation</b><br/>  over the phone</div>
-                        <div className="absolute-bl w-100">
-                          <div className="p-2 border-top">
-                            <div className="font-24">$19</div>
-                          </div>
-                        </div>
-                      </Link>
-                  </Col>
-                  <Col 
-                    xs={{ span: 24, offset: 0 }} 
-                    sm={{ span: 24, offset: 0 }} 
-                    md={{ span: 24, offset: 0 }} 
-                    lg={{ span: 24, offset: 0 }} 
-                    xl={{ span: 6, offset: 0 }} >
-                      <Link to="/pay" 
-className="ant-btn ant-btn-lg paw-btn p-0 inline-block w-100 h-100 relative mb-2"
-                      style={{minHeight: '210px'}}
-                      >
-                        <div className="p-2 font-20 word-wrap white-space-normal">
-                        <b>15 minute consultation</b><br/>  over the phone</div>
-                        <div className="absolute-bl w-100">
-                          <div className="p-2 border-top">
-                            <div className="font-24">$28</div>
-                          </div>
-                        </div>
-                      </Link>
-                  </Col>
-                  <Col 
-                    xs={{ span: 24, offset: 0 }} 
-                    sm={{ span: 24, offset: 0 }} 
-                    md={{ span: 24, offset: 0 }} 
-                    lg={{ span: 24, offset: 0 }} 
-                    xl={{ span: 6, offset: 0 }} >
-                      <Link to="/pay" 
-className="ant-btn ant-btn-lg paw-btn p-0 inline-block w-100 h-100 relative mb-2"
-                      style={{minHeight: '210px'}}
-                      >
-                        <div className="p-2 font-20 word-wrap white-space-normal">
-                        <b>30 minute consultation</b><br/>  over the phone</div>
-                        <div className="absolute-bl w-100">
-                          <div className="p-2 border-top">
-                            <div className="font-24">$50</div>
-                          </div>
-                        </div>
-                      </Link>
-                  </Col>
-                  </Row>
-              </div>
-             
-
-            
-              <div className="pawcall-font-title mt-100 text-center mb-4">home visit perks.</div>  
-
-    <div className="background-paw-dark-blue ">
-                <Row gutter={32}>
-                  <Col 
-                    xs={{ span: 24, offset: 0 }} 
-                    sm={{ span: 24, offset: 0 }} 
-                    md={{ span: 24, offset: 0 }} 
-                    lg={{ span: 24, offset: 0 }} 
-                    xl={{ span: 8, offset: 0 }} className = "text-center mt-2 mb-2">
-                      <img alt="img" src="/pawcall_snap.png" height={80} />
-            <div className="pt-2 font-24 pawcall-font-orange">
-            convenience </div>
-            <div className="p-1 text-left font-16 pawcall-font-yellow">
-            Paw Call Home Visits are a great solution to care for your pets with ease.
-            Dr. Stevenson will come right to your door to provide
-            your pets with the treatment they need.
-             </div>
-                        
-
-                  </Col>
-                  <Col 
-                    xs={{ span: 24, offset: 0 }} 
-                    sm={{ span: 24, offset: 0 }} 
-                    md={{ span: 24, offset: 0 }} 
-                    lg={{ span: 24, offset: 0 }} 
-                    xl={{ span: 8, offset: 0 }} className = "text-center mt-2 mb-2">
-                      <img alt="img" src="/pawcall_insight.png" height={80} />
-                       
-                       <div className="pt-2 font-24 pawcall-font-orange">
-            insight </div>
-            <div className="p-1 text-left font-16 pawcall-font-yellow">
-            Paw Call Home Visits allow Dr. Stevenson to observe your pets
-            in their home environment, so he can offer
-             you more helpful, tailored suggestions 
-            about your pet's home care routine.
-            </div>
-                        
-                  </Col>
-                  <Col s
-                    xs={{ span: 24, offset: 0 }} 
-                    sm={{ span: 24, offset: 0 }} 
-                    md={{ span: 24, offset: 0 }} 
-                    lg={{ span: 24, offset: 0 }} 
-                    xl={{ span: 8, offset: 0 }} className = "text-center mt-2 mb-2">
-                      <img alt="img" src="/pawcall_time.png" height={80} />
-                       <div className="pt-2 font-24 pawcall-font-orange">
-                       time </div>
-            <div className="p-1 text-left font-16 pawcall-font-yellow">
-            Paw Call Home Visits save you time and energy so 
-            you don't have to get your pets in and out of the car,
-            sit in traffic, and wait at the veterinary office. 
-            </div>
-                  </Col>
-                 
-                  </Row>
-              </div>
-<div className="pawcall-font-title mt-4">
-  home visits: in home pet care with Dr. Stevenson.</div>   
-                 <div className="pawcall-font pt-1 pb-2">
-        In addition to physical exams and vaccinations,
-        Dr. Stevenson can treat a variety of routine illnesses, such as: 
-        allergies, eye and ear issues,
-        skin problems, gastrointestinal issues, and a wide array of chronic
-        conditions (i.e. arthritis, diabetes, kidney disease, 
-        thyroid disease, seizure disorders, and more).
-      </div>
-      
-                 <div className="pawcall-font pawcall-font-yellow pb-2">
-        Hours of Operation: Monday-Friday 8-5pm
-      </div>
-      <div className="pawcall-font pb-2 ">
-        Please call 828.699.8299 to schedule an appointment for the following Paw Call services:
-      </div>
-              <div className="background-paw-dark-blue">
-                <Row gutter={32}>
-                  <Col 
-                    xs={{ span: 24, offset: 0 }} 
-                    sm={{ span: 24, offset: 0 }} 
-                    md={{ span: 24, offset: 0 }} 
-                    lg={{ span: 24, offset: 0 }} 
-                    xl={{ span: 6, offset: 0 }} >
-                      <div
-        className="paw-btn-stagnant text-center p-1 inline-block w-100 h-100 relative mb-2"
-                      style={{minHeight: '290px'}}
-                      >
-                        <div className="pt-2 font-20 word-wrap white-space-normal">
-                          <b>Home Visit with Physical Exam</b> </div>
-                          <div className=" font-16 word-wrap white-space-normal">
-                          Henderson County </div>
-                        <div className="absolute-bl w-100">
-                          <div className="p-2 border-top">
-                            <div className="font-24">$75</div>
-                          </div>
-                        </div>
-
-                      </div>
-                  </Col>
-                  <Col 
-                    xs={{ span: 24, offset: 0 }} 
-                    sm={{ span: 24, offset: 0 }} 
-                    md={{ span: 24, offset: 0 }} 
-                    lg={{ span: 24, offset: 0 }} 
-                    xl={{ span: 6, offset: 0 }} >
-                       <div
-        className="paw-btn-stagnant text-center p-1 inline-block w-100 h-100 relative mb-2"
-                      style={{minHeight: '290px'}}
-                      >
-                        <div className="pt-2 font-20 word-wrap white-space-normal">
-                          <b>Home Visit<br/> Paw Pack</b>
-                          </div>
-                          <div className="font-16 word-wrap white-space-normal">
-                          Henderson County:<br/>  
-                          includes physical exam
-                          and tailored vaccinations</div>
-                        <div className="absolute-bl w-100">
-                          <div className="p-2 border-top">
-                            <div className="font-24">$115</div>
-                          </div>
-                        </div>
-                      </div>
-                  </Col>
-                  <Col 
-                    xs={{ span: 24, offset: 0 }} 
-                    sm={{ span: 24, offset: 0 }} 
-                    md={{ span: 24, offset: 0 }} 
-                    lg={{ span: 24, offset: 0 }} 
-                    xl={{ span: 6, offset: 0 }} >
-                         <div
-        className="paw-btn-stagnant text-center p-1 inline-block w-100 h-100 relative mb-2"
-                      style={{minHeight: '290px'}}
-                      >
-                        <div className="pt-2 font-20 word-wrap white-space-normal">
-                        <b>Home Visit with Physical Exam</b><br/> 
-                        </div>
-                        <div className="font-16 word-wrap white-space-normal">
-                        Buncombe, Polk, or Transylvania County </div>
-                        <div className="absolute-bl w-100">
-                          <div className="p-2 border-top">
-                            <div className="font-24">$100</div>
-                          </div>
-                        </div>
-                      </div>
-                  </Col>
-                  <Col 
-                    xs={{ span: 24, offset: 0 }} 
-                    sm={{ span: 24, offset: 0 }} 
-                    md={{ span: 24, offset: 0 }} 
-                    lg={{ span: 24, offset: 0 }} 
-                    xl={{ span: 6, offset: 0 }} >
-                        <div
-        className="paw-btn-stagnant text-center p-1 inline-block w-100 h-100 relative mb-2"
-                      style={{minHeight: '290px'}}
-                      >
-                        <div className="pt-2 font-20 word-wrap white-space-normal">
-                        <b>Home Visit<br/> Paw Pack</b>
-                          
-                          </div>
-                          <div className="font-16 word-wrap white-space-normal">
-                        Buncombe, Polk, or Transylvania County:<br/>  
-                          includes physical exam
-                          and tailored vaccinations
-                          
-                          </div>
-                        <div className="absolute-bl w-100">
-                          <div className="p-2 border-top">
-                            <div className="font-24">$140</div>
-                          </div>
-                        </div>
-                      </div>
-                  </Col>
-                  </Row>
-                  <Row gutter={32} className="mt-2 mb-100">
-                  <Col 
-                    xs={{ span: 24, offset: 0 }} 
-                    sm={{ span: 24, offset: 0 }} 
-                    md={{ span: 24, offset: 0 }} 
-                    lg={{ span: 24, offset: 0 }} 
-                    xl={{ span: 24, offset: 0 }} >
-                         <div
-        className="paw-btn-stagnant text-center p-1 inline-block w-100 h-100 relative mb-2"
-                      style={{minHeight: '290px'}}
-                      >
-                        <div className="p-2 font-bold font-20 word-wrap white-space-normal">
-                          Continued Services</div>
-                          <div className="font-16 word-wrap white-space-normal">
-                          Upon consultation, there may be an additional cost for these services:
-                          </div>
-                          <div className="font-16 word-wrap white-space-normal">
-                          Toe Nail Trim ($15)</div>
-                          <div className="font-16 word-wrap white-space-normal">
-                          Fecal Exam ($15)</div>
-                          <div className="font-16 word-wrap white-space-normal">
-                          Heart worm test ($40)</div>
-                          <div className="font-16 word-wrap white-space-normal">
-                          Health Profile/Blood Screen ($85)</div>
-                          <div className="font-16 word-wrap white-space-normal">
-                          Medications (dependent upon your pet's needs)</div>
-                          <div className="font-16 pb-2 word-wrap white-space-normal">
-                          Additional Pet Exams ($45/pet)</div>
-
-                      </div>
-                  </Col>
-                  </Row>
-                  </div>
-                  
-
-                 </div> 
-           
+    <header id="header" class="animated slideInDown" style={{animationDelay:'1.8s'}}>
+        <table>
+            <tr>
+                <td id="logo">yourname.</td>
+                <td id="navigation">
+                    <a href="#work">work</a>
+                    <a href="#bio">about</a>
+                    <a href="">blog</a>
+                    <a href="#contact">contact</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <table id="top_part">
+        <tr>
+            <td id="about" class="animated slideInLeft" style={{animationDelay:'2s'}}>
+                <h1>this is where you put your about or tagline</h1>
+                <button class="btn_one">Hire Me</button>
+                <table>
+                    <tr>
+                        <td class="animated zoomIn" style={{animationDelay:'2s'}}><a class="social"><i class="fab fa-facebook"></i></a></td>
+                        <td class="animated zoomIn" style={{animationDelay:'2s'}}><a class="social"><i class="fab fa-twitter"></i></a></td>
+                        <td class="animated zoomIn" style={{animationDelay:'2s'}}><a class="social"><i class="fab fa-instagram"></i></a></td>
+                        <td class="animated zoomIn" style={{animationDelay:'2s'}}><a class="social"><i class="fab fa-dribbble"></i></a></td>
+                        <td class="animated zoomIn" style={{animationDelay:'2s'}}><a class="social"><i class="fab fa-medium"></i></a></td>
+                    </tr>
+                </table>
+            </td>
+            <td id="rightImage" class="animated jackInTheBox" style={{animationDelay:'2s'}}></td>
+        </tr>
+    </table>
+    <div id="work">
+        <h1>work</h1>
+        <div id="photos">
+            <img onclick="magnify($(this).attr('src'))" alt="img" src="https://images.unsplash.com/photo-1547922657-b370d1687eb1?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80"/>
+            <img onclick="magnify($(this).attr('src'))" alt="img" src="https://images.unsplash.com/photo-1549375463-8cbc18ca3f24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80"/>
+            <img onclick="magnify($(this).attr('src'))" alt="img" src="https://images.unsplash.com/photo-1549366021-9f761d450615?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=650&q=80"/>
+            <img onclick="magnify($(this).attr('src'))" alt="img" src="https://images.unsplash.com/photo-1549309019-a1d77aeae74f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"/>
+            <img onclick="magnify($(this).attr('src'))" alt="img" src="https://images.unsplash.com/photo-1547149666-769b42053e67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80"/>
+            <img onclick="magnify($(this).attr('src'))" alt="img" src="https://images.unsplash.com/photo-1547950515-e652d0f50b1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"/>
+            <img onclick="magnify($(this).attr('src'))" alt="img" src="https://images.unsplash.com/photo-1545342084-d03fe58ea023?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80"/>
+        </div>
     </div>
-
-
-
-    <div id="middle" className="">
-    <Row gutter={32} align="">
-    <Col 
-                    xs={{ span: 24, offset: 0 }} 
-                    sm={{ span: 24, offset: 0 }} 
-                    md={{ span: 24, offset: 0 }} 
-                    lg={{ span: 24, offset: 0 }} 
-                    xl={{ span: 1, offset: 0 }} 
-                    className="text-center">
-                
-
-                  </Col>
-                  <Col 
-                    xs={{ span: 24, offset: 0 }} 
-                    sm={{ span: 24, offset: 0 }} 
-                    md={{ span: 24, offset: 0 }} 
-                    lg={{ span: 24, offset: 0 }} 
-                    xl={{ span: 13, offset: 0 }} 
-                    className="text-center ">
-                      
-<div  className=" w3-lobster pawcall-font-title-purple  font-60 mt-50">
-            Give Dr. Scott Stevenson <br/> a call today at<br/> 828.699.8299
-        </div>
-        
-
-                  </Col>
-                  <Col 
-                    xs={{ span: 24, offset: 0 }} 
-                    sm={{ span: 24, offset: 0 }} 
-                    md={{ span: 24, offset: 0 }} 
-                    lg={{ span: 24, offset: 0 }} 
-                    xl={{ span: 10, offset: 0 }} 
-                    className="text-center">
-                    
-
-                  </Col>
-                  </Row>
-        
+    <div id="bio">
+        <h1>about</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
     </div>
-
-
-    <div className="pb-100 pt-100 background-paw-dark-blue ">
-    <div className="w-100 text-center  ">
-    <div className="text-center">
-        <img alt="img" src="/pawcall_icon_teal.png" height={250} /></div>
-    <div className="pawcall-font-orange pt-2 font-30 w3-lobster">Paw Call</div>
-         </div>
-
-         <div className=" mt-1 text-center font-paw-yellow">
-        Product of Scott C. Stevenson, D.V.M.
-        </div>
-
-        
-       
-  <div className="background-paw-dark-blue pl-2 pr-2 mt-50 font-12 text-center font-white">
-       
-*This service is for consultation only. A diagnosis or treatment cannot be given 
-without a proper veternarian-client relationship. 
-
-
-        </div>
-        <div className="background-paw-dark-blue pl-2 pr-2 text-center font-12 font-white">
-       This only can be established if
-the pet is physically seen. This service is not a substitute for having an office 
-visit by your veternarian.
-
-
-        </div>
-        
-        
-         </div>
+    <div id="contact">
+        <h1>contact</h1>
+            <table>
+                <tr>
+                    <td>
+                        <div id="inner_div">
+                            <table id="inner_table">
+                                <tr>
+                                    <td><i class="fas fa-phone"></i> &nbsp; +1 234 567 8910</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-at"></i> &nbsp; yourname@email.com</td>
+                                </tr>
+                                 <tr>
+                                    <td><i class="fas fa-fax"></i> &nbsp; +1 234 567 8910</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-map-marker-alt"></i>
+                                    <div id="address">
+                                        Street 123,
+                                        blah blah city,
+                                        blah blah country
+                                    </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="social"><i class="fab fa-facebook"></i></a>
+                                        <a class="social"><i class="fab fa-twitter"></i></a>
+                                        <a class="social"><i class="fab fa-instagram"></i></a>
+                                        <a class="social"><i class="fab fa-dribbble"></i></a>
+                                        <a class="social"><i class="fab fa-medium"></i></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td>
+                        <form>
+                            <input type="text" placeholder="name" required/>
+                            <input type="email" placeholder="email" required/>
+                            <textarea placeholder="your message" required rows="5"></textarea>
+                            <button class="btn_one">send</button>
+                        </form> 
+                    </td>
+                </tr>
+            </table>
     </div>
-   
-         
+    <div id="footer">
+        made on earth by a human  <a href="https://imfunniee.github.io">imfunniee</a>
+    </div>
+    {/* <script src="index.js" type="text/javascript"></script> */}
 
-          
+
+
 
           </Content>
           </Layout>
