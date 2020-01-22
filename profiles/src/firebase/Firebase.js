@@ -4,9 +4,9 @@ require('firebase/firestore')
 require('firebase/storage')
 
 firebase.initializeApp({
-  apiKey: 'AIzaSyCfAIiEofLUeFmiJtHC2jAl0DiFZNB0sFw',
-  databaseURL: 'https://scott-b12ee.firebaseio.com',
-  projectId: 'scott-b12ee',
+  apiKey: '',
+  databaseURL: '',
+  projectId: '',
 })
 
 // firestore
