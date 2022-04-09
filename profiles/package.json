@@ -31,7 +31,7 @@
     "lodash.chunk": "^4.2.0",
     "lz-string": "^1.4.4",
     "mandrill-api": "^1.0.45",
-    "moment": "^2.22.2",
+    "moment": "^2.29.2",
     "mousetrap": "^1.6.1",
     "react": "^16.3.1",
     "react-beautiful-dnd": "^7.1.3",
